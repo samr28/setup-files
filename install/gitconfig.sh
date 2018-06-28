@@ -1,5 +1,15 @@
 #!/bin/bash
 
+install() {
+  mv gitconfig .gitconfig
+  printf "Done!\n"
+}
+
+noinstall() {
+  rm gitconfig
+  printf "Ok bye!\n"
+}
+
 printf "Downloading gitconfig from github...\n"
 cd ~/
 wget https://raw.githubusercontent.com/samr28/setup-files/master/gitconfig
@@ -19,13 +29,3 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
-install() {
-  mv gitconfig .gitconfig
-  printf "Done!\n"
-}
-
-noinstall() {
-  rm gitconfig
-  printf "Ok bye!\n"
-}
