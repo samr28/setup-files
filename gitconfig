@@ -1,5 +1,9 @@
 # File located: ~/.gitconfig
 
+[user]
+	name = Sam Roquitte
+	email = samroq@yahoo.com
+
 [alias]
   br = branch
   ci = commit
