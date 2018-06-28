@@ -1,0 +1,6 @@
+# File located: ~/.inputrc
+# Create file if does not exist
+# Source: https://askubuntu.com/questions/87061/can-i-make-tab-auto-completion-case-insensitive-in-the-terminal
+
+$include /etc/inputrc
+set completion-ignore-case On
