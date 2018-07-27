@@ -1,12 +1,13 @@
-Copied from: https://gist.github.com/LuisHCK/02fc5e441dd4cda9951171286542dbb3
+## Modified from: https://gist.github.com/LuisHCK/02fc5e441dd4cda9951171286542dbb3
 
+### Copy defaults
 
+```
 sudo cp /etc/network/interfaces /etc/network/interfacesoriginal
 sudp rm /etc/network/interfaces
-sudo nano /etc/network/interfaces
-----------------------------------
-COPY
-----------------------------------
+```
+### Paste into `/etc/network/interfaces` (`sudo vim /etc/network/interfaces`)
+```
 auto lo
 iface lo inet loopback
 
@@ -18,30 +19,26 @@ allow-hotplug wlan0
 iface wlan0 inet manual
 wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp
----------------------------------
-Ctrl + O
-Enter
-Ctrl + X
-sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-
-----------------------------------
-COPY
-----------------------------------
+```
+### Paste into `/etc/wpa_supplicant/wpa_supplicant.conf` (`sudo vim /etc/wpa_supplicant/wpa_supplicant.conf`)
+```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
+```
 
+#### For secure WiFi:
+```
 network={
 ssid="SECURE-WIFI"
 psk="yourpassword"
 }
-
+```
+#### Or for unsecured WiFi:
+```
 network={
 ssid="OPEN-WIFI"
 key_mgmt=NONE
 }
-----------------------------------
-Change based on your WiFi Settings
-Ctrl + O
-Enter
-Ctrl + X
-sudo reboot
+```
+
+### Reboot system (`sudo reboot`)
