@@ -1,1 +1,6 @@
-list distro information = `cat /etc/*-release`
+# General
+
+## List distro innformation
+```
+cat /etc/*-release
+```
