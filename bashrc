@@ -1,4 +1,4 @@
-# File located: 
+# File located: ~/.bashrc
 
 # Parse git branch function for PS1
 function parse_git_branch {
