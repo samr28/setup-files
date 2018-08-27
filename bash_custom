@@ -1,4 +1,4 @@
-# File located: ~/.bashrc
+# File located: ~/.bash_custom
 
 # reset alias
 alias r='cd && clear'
