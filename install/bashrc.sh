@@ -44,4 +44,6 @@ if ! grep -q "source ~/.ps1" ~/.bashrc; then
 	echo 'source ~/.ps1' >> .bashrc
 fi
 
+source ~/.bashrc
+
 printf "Done!\n"

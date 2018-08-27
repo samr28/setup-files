@@ -12,12 +12,12 @@ noinstall() {
 
 printf "Downloading gitconfig from github...\n"
 cd ~/
-wget https://raw.githubusercontent.com/samr28/setup-files/master/gitconfig
+wget -q https://raw.githubusercontent.com/samr28/setup-files/master/gitconfig
 printf "====================\n"
-printf "Your gitconfig:\n\n"
+printf "Your gitconfig:\n"
 cat .gitconfig
 printf "==========\n"
-printf "Will be replaced with:\n\n"
+printf "Will be replaced with:\n"
 cat gitconfig
 printf "====================\n"
 
