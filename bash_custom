@@ -1,6 +1,0 @@
-# File located: ~/.bash_custom
-
-# reset alias
-alias r='cd && clear'
-# clear alias
-alias c='clear'
