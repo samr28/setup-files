@@ -16,15 +16,15 @@ multicolor() {
 	rm multicolor
 }
 
-if ! grep -q "source ~/.bash_custom" ~/.bashrc; then
+if ! grep -q "source ~/.bash_aliases" ~/.bashrc; then
 	
 	printf "Downloading bashrc from github...\n"
 	cd ~/
-	wget -q https://raw.githubusercontent.com/samr28/setup-files/master/bash_custom
+	wget -q https://raw.githubusercontent.com/samr28/setup-files/master/bash_aliases
 	
 	printf "Adding remote bashrc to local\n"
-	mv bashrc .bash_custom
-	echo 'source ~/.bash_custom' >> .bashrc	
+	mv bashrc .bash_aliases
+	echo 'source ~/.bash_aliases' >> .bashrc	
 fi
 if ! grep -q "source ~/.ps1" ~/.bashrc; then 
 
