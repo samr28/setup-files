@@ -1,16 +1,13 @@
-# File located: ~/.gitconfig
-
 [user]
 	name = Sam Roquitte
 	email = samroq@yahoo.com
 
 [alias]
   br = branch
-  ci = commit
   co = checkout
   df = diff -w
+  dff = diff --staged
   lg = log --graph  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
-  me = merge
   put = push origin HEAD -u
   st = status
 [core]
