@@ -10,5 +10,6 @@
   lg = log --graph  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
   put = push origin HEAD -u
   st = status
+  c = commit
 [core]
 	editor = vim
